@@ -1,0 +1,95 @@
+<!--
+Single-file website for "The Beginner Video Editing Blueprint".
+Copy this into index.html, preview locally (double-click) or deploy via Vercel/GitHub Pages.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Beginner Video Editing Blueprint</title>
+  <style>
+    :root{--maxw:1000px; --accent:#0b77ff}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; line-height:1.5; color:#0b1b2b}
+    header{background:linear-gradient(90deg,#f7fbff,#eef7ff); padding:18px 16px; border-bottom:1px solid #e6eef9}
+    .wrap{max-width:var(--maxw); margin:28px auto; padding:0 16px}
+    .brand{font-weight:700; letter-spacing:0.4px}
+    .hero{display:grid; grid-template-columns:1fr 360px; gap:24px; align-items:center}
+    @media (max-width:880px){.hero{grid-template-columns:1fr}}
+    .card{background:white; padding:20px; border-radius:12px; box-shadow:0 6px 18px rgba(10,20,40,0.06)}
+    h1{margin:0 0 8px; font-size:28px}
+    p.lead{margin:0 0 16px; color:#234;}
+    .cta-row{display:flex; gap:12px; align-items:center}
+    .btn{display:inline-block; padding:10px 14px; border-radius:10px; text-decoration:none; font-weight:600}
+    .btn-primary{background:var(--accent); color:white}
+    .btn-outline{border:2px solid #e1e8ff; color:#234; background:transparent}
+    .features{display:flex; gap:12px; margin-top:16px}
+    .feat{flex:1; font-size:14px; background:#fbfdff; padding:10px; border-radius:8px}
+    .product-img{display:flex; align-items:center; justify-content:center; height:100%;}
+    .small{font-size:13px; color:#526374}
+    footer{padding:18px 16px; text-align:center; color:#6b7887; font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex; justify-content:space-between; align-items:center">
+      <div class="brand">Stakecut<span style="color:var(--accent)"></span></div>
+      <nav class="small">Beginner Video Editing Blueprint</nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h1 id="product-title">The Beginner Video Editing Blueprint</h1>
+          <p id="product-desc" class="lead">
+            Turn your smartphone into a money-making video editing skill in just 14 days—even with zero experience.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact">Join Now – Only ₦3,000 Today!</a>
+            <a class="btn btn-outline" href="#details">See What You Get</a>
+          </div>
+          <div class="features" style="margin-top:18px">
+            <div class="feat">Smartphone-only training</div>
+            <div class="feat">Editable CapCut templates</div>
+            <div class="feat">Client-pitch scripts & income system</div>
+          </div>
+          <p class="small" style="margin-top:12px">
+            Proven, practical, income-focused—for total beginners.
+          </p>
+        </div>
+        <div id="details" class="card" style="margin-top:14px">
+          <h3 style="margin-top:0">What You Get</h3>
+          <ul>
+            <li>7-Day Smartphone Video Editing Training</li>
+            <li>CapCut Pro Template Pack</li>
+            <li>₦50K/week Blueprint for pitching & delivery</li>
+            <li>50+ Done-for-You Client Scripts</li>
+            <li>Private Telegram Support & Personal Branding Masterclass</li>
+          </ul>
+        </div>
+      </div>
+      <aside>
+        <div class="card product-img">
+          <!-- placeholder image -->
+          <svg width="320" height="220" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Course screenshot">
+            <rect width="320" height="220" rx="12" fill="#f1f8ff" />
+            <text x="50%" y="50%" fill="#cfe8ff" font-size="20" text-anchor="middle">Your Image Here</text>
+          </svg>
+        </div>
+      </aside>
+    </section>
+    <section id="contact" style="margin-top:20px">
+      <div class="card">
+        <h3 style="margin-top:0">Join Now</h3>
+        <p class="small">Tap the button below to enroll instantly and get access.</p>
+        <a class="btn btn-primary" href="https://ver-landing-page-qkvh.onrender.com/?pid=11028&amp;a=58912470">Enroll for ₦3,000</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">Made with ♡ — your blueprint to editing freedom.</div>
+  </footer>
+</body>
+</html>
